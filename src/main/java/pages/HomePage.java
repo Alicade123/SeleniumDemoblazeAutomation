@@ -11,12 +11,14 @@ public class HomePage {
     public  SignupModel signupModel;
     public LoginModal loginModal;
     public Navigation navigation;
+    public  ProductCategory productCategory;
     public HomePage(WebDriver driver){
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         signupModel = new SignupModel(driver);
         loginModal = new LoginModal(driver);
         navigation = new Navigation(driver);
+        productCategory = new ProductCategory(driver);
     }
 
 
