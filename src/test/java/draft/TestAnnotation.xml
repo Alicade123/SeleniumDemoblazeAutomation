@@ -9,13 +9,13 @@
         </classes>
     </test>
 
-<!--    &lt;!&ndash;Todo 3: Firefox&ndash;&gt;-->
-<!--    <test name ="Test on Firefox">-->
-<!--        <parameter name="BrowserType" value="Firefox"/>-->
-<!--        <classes>-->
-<!--            <class name="draft.TestAnnotation"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <!--Todo 3: Firefox&ndash;&gt;-->
+    <test name ="Test on Firefox">
+        <parameter name="BrowserType" value="Firefox"/>
+        <classes>
+            <class name="draft.TestAnnotation"/>
+        </classes>
+    </test>
 
     <!--Todo 3: Chrome-->
     <test name ="Test on Chrome">
