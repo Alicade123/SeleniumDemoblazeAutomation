@@ -1,20 +1,30 @@
 package login;
 
 import base.BaseTests;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
 public class LoginTests extends BaseTests {
-    @Test
-    public  void testLoginWithValidData() throws InterruptedException {
-        String username = "Alicade";
-        String password = "a2d@2026";
+    @Test(dataProvider = "loginData")
+    public  void testLoginWithValidData(String username, String password, boolean isSuccessful) throws InterruptedException {
+//        String username = "Alicade";
+//        String password = "a2d@2026";
        var dashboardPage = homePage.loginModal.login(username,password);
        String actualResult= dashboardPage.getStatus();
        String expectedResult = "Welcome "+username;
-        assertEquals(actualResult,expectedResult,"Something went wrong");
+       assertEquals(actualResult,expectedResult,"Something went wrong");
     }
+    @DataProvider(name = "loginData")
+    public Object[][] loginData() {
+        return new Object[][]{
+                {"Alicade", "a2d@2026", true},
+                {"abiturije@gmail.com", "12345", false},
+//                {"alicade1", "12345", true}
+        };
+    }
+
     //Todo:2 Test login with nonExisting user
     @Test
     private  void testLoginWithNonExistingData() throws InterruptedException {
