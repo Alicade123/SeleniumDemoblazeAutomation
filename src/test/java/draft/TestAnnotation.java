@@ -11,7 +11,7 @@ public class TestAnnotation {
     private WebDriver driver;
     @Test
     @Parameters ({"URL", "BrowserType"})
-    private void runSite(String url , String browserType){
+    public void runSite(String url , String browserType){
          if(browserType.equalsIgnoreCase("internet explorer")){
              driver = new InternetExplorerDriver();
          }else if(browserType.equalsIgnoreCase("chrome")){
