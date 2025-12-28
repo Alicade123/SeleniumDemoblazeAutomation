@@ -1,0 +1,27 @@
+<suite name="Cross Browswer Testing">
+    <parameter name ="URL" value ="https://irembo.gov.rw/home/citizen/all_services"/>
+
+    <!--Todo 3: Internet Explorer-->
+    <test name ="Test on IE">
+        <parameter name="BrowserType" value="Internet Explorer"/>
+        <classes>
+            <class name="draft.TestAnnotation"/>
+        </classes>
+    </test>
+
+    <!--Todo 3: Firefox-->
+    <test name ="Test on Firefox">
+        <parameter name="BrowserType" value="Firefox"/>
+        <classes>
+            <class name="draft.TestAnnotation"/>
+        </classes>
+    </test>
+
+    <!--Todo 3: Chrome-->
+    <test name ="Test on Chrome">
+        <parameter name="BrowserType" value="Chrome"/>
+        <classes>
+            <class name="draft.TestAnnotation"/>
+        </classes>
+    </test>
+</suite>
