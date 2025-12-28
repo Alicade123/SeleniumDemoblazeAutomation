@@ -1,5 +1,5 @@
-<suite name="Cross Browswer Testing">
-    <parameter name ="URL" value ="https://irembo.gov.rw/home/citizen/all_services"/>
+<suite name="Cross Browser Testing">
+    <parameter name ="URL" value ="https://askomdch.com/"/>
 
     <!--Todo 3: Internet Explorer-->
     <test name ="Test on IE">
@@ -9,13 +9,13 @@
         </classes>
     </test>
 
-    <!--Todo 3: Firefox-->
-    <test name ="Test on Firefox">
-        <parameter name="BrowserType" value="Firefox"/>
-        <classes>
-            <class name="draft.TestAnnotation"/>
-        </classes>
-    </test>
+<!--    &lt;!&ndash;Todo 3: Firefox&ndash;&gt;-->
+<!--    <test name ="Test on Firefox">-->
+<!--        <parameter name="BrowserType" value="Firefox"/>-->
+<!--        <classes>-->
+<!--            <class name="draft.TestAnnotation"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
     <!--Todo 3: Chrome-->
     <test name ="Test on Chrome">
