@@ -1,25 +1,24 @@
 <suite name="Cross Browser Testing">
-    <parameter name ="URL" value ="https://askomdch.com/"/>
+    <parameter name="URL" value="https://askomdch.com/"/>
 
-    <!--Todo 3: Internet Explorer-->
-    <test name ="Test on IE">
-        <parameter name="BrowserType" value="Internet Explorer"/>
+    <test name="Test on Chrome">
+        <parameter name="BrowserType" value="Chrome"/>
         <classes>
             <class name="draft.TestAnnotation"/>
         </classes>
     </test>
 
-    <!--Todo 3: Firefox&ndash;&gt;-->
-    <test name ="Test on Firefox">
+    <test name="Test on Firefox">
         <parameter name="BrowserType" value="Firefox"/>
         <classes>
             <class name="draft.TestAnnotation"/>
         </classes>
     </test>
 
-    <!--Todo 3: Chrome-->
-    <test name ="Test on Chrome">
-        <parameter name="BrowserType" value="Chrome"/>
+
+
+    <test name="Test on IE">
+        <parameter name="BrowserType" value="Internet Explorer"/>
         <classes>
             <class name="draft.TestAnnotation"/>
         </classes>
