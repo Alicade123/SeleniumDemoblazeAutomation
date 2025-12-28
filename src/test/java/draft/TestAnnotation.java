@@ -24,5 +24,6 @@ public class TestAnnotation {
         System.out.println("The browser type is: "+browserType);
         System.out.println("The site title: "+driver.getTitle());
         System.out.println("The closed browser is: "+browserType);
+        driver.quit();
     }
 }
